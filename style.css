@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  margin-top: 20px;
+  transition: all 1s ease; /* Transition for smooth resizing */
+}
+
+#box.animated {
+  animation: moveBox 2s forwards; /* Triggered animation */
+}
+
+/* Keyframes for the box animation */
+@keyframes moveBox {
+  0% {
+    transform: translateX(0);
+    background-color: lightcoral;
+  }
+  50% {
+    transform: translateX(200px);
+    background-color: lightgreen;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: lightcoral;
+  }
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
